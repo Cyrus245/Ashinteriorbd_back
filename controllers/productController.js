@@ -102,7 +102,7 @@ exports.updateProduct = catchAsyncErrors(async (req, res, next) => {
     }
 });
 
-//// customerInfo Delete  => /api/property/v1/eligibility/delete
+
 exports.deleteProduct = catchAsyncErrors(async (req, res, next) => {
     try {
         let isValidId = mongoose.Types.ObjectId.isValid(req.params.id);

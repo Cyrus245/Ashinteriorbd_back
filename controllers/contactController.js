@@ -15,7 +15,9 @@ exports.addContact = catchAsyncErrors(async (req, res, next) => {
     //code destructure from "req.body" postman
     const {
         name,
+        mobile,
         email,
+        address,
         message,
        
       
@@ -30,6 +32,8 @@ exports.addContact = catchAsyncErrors(async (req, res, next) => {
             name,
             email,
             message,
+            mobile,
+            address,
             
         });
 
