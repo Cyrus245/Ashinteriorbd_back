@@ -119,7 +119,9 @@ exports.deleteContact = catchAsyncErrors(async (req, res, next) => {
 
 exports.getTest = (req, res) => {
   // return res.send(`hello`);
-  return res.json({
-    message: "i got you",
-  });
+  res.send("hello");
+
+  // return res.json({
+  //   message: "i got you",
+  // });
 };

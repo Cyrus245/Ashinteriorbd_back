@@ -25,6 +25,9 @@ const teamRoute = require("./routers/teamRoute");
 const contactRoute = require("./routers/contactRoute");
 
 //API Route Middleware
+app.get("/", (req, res) => {
+  res.send("hello from api");
+});
 app.use("/api/accounts/v1/", auth);
 app.use("/api/accounts/v1/", permissionRoute);
 app.use("/api/content/v1/", contentheaderRoute);
