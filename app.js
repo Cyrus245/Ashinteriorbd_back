@@ -26,7 +26,7 @@ const contactRoute = require("./routers/contactRoute");
 
 //API Route Middleware
 app.get("/", (req, res) => {
-  res.send("hello from api");
+  res.send("ARPAN IS A Mf");
 });
 app.use("/api/accounts/v1/", auth);
 app.use("/api/accounts/v1/", permissionRoute);
